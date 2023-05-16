@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Storytime Official Mod</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/IncidentDef[defName = "Jeub_Swarm"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="MusicExpanded.ModExtension.PlayCue">
+							<cue>Custom</cue>
+							<cueData>JeubSong</cueData>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Storytime Official Mod</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/IncidentDef[defName = "GibbonousMoon"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="MusicExpanded.ModExtension.PlayCue">
+							<cue>Custom</cue>
+							<cueData>GibbonousMoon</cueData>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+	
+</Patch>
